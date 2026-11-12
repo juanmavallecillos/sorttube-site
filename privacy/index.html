@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SortTube · Privacidad / Privacy</title>
+    <!-- Self-contained on purpose: no extension APIs, no external files, so the
+         very same file can be published on the web as the public privacy
+         policy the Chrome Web Store asks for. Both languages are here; the
+         browser's language picks one, and the links switch. Publish it
+         together with privacy.js. -->
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0f0f0f;
+        --muted: #606060;
+        --line: #e5e5e5;
+        --chip: #f2f2f2;
+        --accent: #065fd4;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f0f0f;
+          --fg: #f1f1f1;
+          --muted: #aaaaaa;
+          --line: #303030;
+          --chip: #272727;
+          --accent: #3ea6ff;
+        }
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.6 Roboto, Arial, sans-serif; }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 16px 56px; }
+      h1 { margin: 0 0 4px; font-size: 26px; line-height: 1.25; }
+      h2 { margin: 28px 0 8px; font-size: 18px; }
+      p, ul { margin: 0 0 12px; }
+      ul { padding-left: 22px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--accent); }
+      code { background: var(--chip); padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+      .muted { color: var(--muted); }
+      .lang { display: flex; gap: 12px; justify-content: flex-end; font-size: 13px; }
+      .summary { background: var(--chip); border-radius: 12px; padding: 14px 20px; margin: 20px 0; }
+      .summary ul { margin: 0; }
+      table { width: 100%; border-collapse: collapse; margin: 0 0 12px; font-size: 14px; }
+      th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+      th { font-weight: 600; }
+      article[hidden] { display: none; }
+      /* Narrow screens: each row of the table as a small block. */
+      @media (max-width: 560px) {
+        table, tbody, tr, td { display: block; }
+        tr:first-child { display: none; }
+        tr { padding: 10px 0; border-bottom: 1px solid var(--line); }
+        td { border: 0; padding: 2px 0; }
+        td:first-child { font-weight: 600; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="lang">
+        <a href="#es" data-lang="es">Español</a>
+        <a href="#en" data-lang="en">English</a>
+      </nav>
+
+      <!-- ===================================================== Español -->
+      <article id="es" lang="es">
+        <h1>Política de privacidad de SortTube</h1>
+        <p class="muted">Última actualización: 12 de noviembre de 2026</p>
+
+        <div class="summary">
+          <p><strong>En resumen</strong></p>
+          <ul>
+            <li>SortTube no tiene servidores propios. No recoge, no vende y no comparte tus datos.</li>
+            <li>Sin publicidad, sin analíticas y sin rastreo.</li>
+            <li>Tus grupos se guardan en tu navegador y, con la sincronización de Chrome, en tu cuenta de Google.</li>
+            <li>Solo se conecta con YouTube y, si compras SortTube Pro, con Lemon Squeezy para comprobar tu licencia.</li>
+          </ul>
+        </div>
+
+        <h2>Quién es el responsable</h2>
+        <p>SortTube es una extensión de Chrome desarrollada por Juan Manuel Vallecillos. Para cualquier pregunta sobre privacidad, escribe a <a href="mailto:[CORREO DE CONTACTO]">[CORREO DE CONTACTO]</a>.</p>
+        <p>SortTube no está afiliada a YouTube ni a Google.</p>
+
+        <h2>Qué datos guarda SortTube</h2>
+        <p>Todo se guarda con el almacenamiento de extensiones de Chrome. Nada llega a servidores del desarrollador, porque no los hay.</p>
+        <table>
+          <tr><th>Dato</th><th>Dónde</th><th>Para qué</th></tr>
+          <tr><td>Tus grupos: nombre, color, emoji y los canales de cada uno (identificador, nombre y @handle)</td><td><code>chrome.storage.sync</code></td><td>Mostrar tus grupos. Si tienes activada la sincronización de Chrome, Google los sincroniza entre tus navegadores, según su propia política.</td></tr>
+          <tr><td>Cuándo abriste cada grupo por última vez</td><td><code>chrome.storage.sync</code></td><td>Marcar los vídeos nuevos desde tu última visita.</td></tr>
+          <tr><td>Licencia de SortTube Pro (si la compras): clave, identificador de esta activación, estado, nombre del producto, correo de la compra y fecha de la última comprobación</td><td><code>chrome.storage.sync</code></td><td>Saber si tienes Pro, también en tus otros navegadores.</td></tr>
+          <tr><td>Fotos de perfil de los canales, fechas de las últimas subidas, vista y filtros elegidos, grupos desplegados en la barra lateral</td><td><code>chrome.storage.local</code> (solo en este navegador)</td><td>Caché y preferencias, para que todo cargue más rápido y como lo dejaste.</td></tr>
+        </table>
+        <p>SortTube <strong>no guarda</strong> tu historial de reproducciones, ni lo que ves, ni tus búsquedas.</p>
+
+        <h2>Con quién se conecta SortTube</h2>
+        <p><strong>YouTube</strong> (<code>www.youtube.com</code> y sus servidores de imágenes), directamente desde tu navegador:</p>
+        <ul>
+          <li><strong>Sin tu sesión:</strong> los vídeos de los canales de tus grupos (feeds RSS y páginas públicas de los canales), sus duraciones y sus fotos de perfil.</li>
+          <li><strong>Con tu sesión, para leer:</strong>
+            <ul>
+              <li>tu lista de suscripciones, para poder ordenarlas;</li>
+              <li>tu lista «Ver más tarde», para mostrar qué vídeos tienes guardados;</li>
+              <li>la primera página de tu historial y de tu feed de Suscripciones, solo para saber cuánto has visto de cada vídeo y pintar la barra roja de progreso. Esta información se usa en memoria mientras la página está abierta: no se guarda ni se envía a nadie.</li>
+            </ul>
+          </li>
+          <li><strong>Con tu sesión, para cambiar algo,</strong> solo cuando tú pulsas el botón correspondiente:
+            <ul>
+              <li>suscribirte o desuscribirte de un canal, desde el organizador y después de confirmarlo;</li>
+              <li>añadir o quitar un vídeo de «Ver más tarde»;</li>
+              <li>añadir un vídeo a la cola.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Estas peticiones son las mismas que haría la propia página de YouTube, y se rigen por la <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad de Google</a>. SortTube nunca ve ni guarda tu contraseña.</p>
+        <p>La vista previa de vídeo usa el reproductor de la propia página de YouTube. Al usarla, YouTube puede registrar la reproducción como lo hace con sus propias vistas previas. Si cambias el volumen en la vista previa, SortTube actualiza la preferencia de volumen de YouTube en tu navegador, igual que haría su reproductor.</p>
+
+        <p><strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), solo si compras SortTube Pro:</p>
+        <ul>
+          <li>La compra se hace en la página de Lemon Squeezy, que actúa como vendedor oficial (merchant of record). Ellos tratan tus datos de pago y de facturación según su <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">política de privacidad</a>. SortTube no ve ni guarda los datos de tu tarjeta.</li>
+          <li>Al activar tu licencia y después una vez al día, SortTube envía a Lemon Squeezy tu clave de licencia y el identificador de esta activación para comprobar que sigue siendo válida. Lemon Squeezy responde con el estado de la licencia, el nombre del producto y el correo de la compra, que se guardan como se indica arriba.</li>
+        </ul>
+
+        <h2>Lo que SortTube no hace</h2>
+        <ul>
+          <li>No vende ni cede tus datos a terceros.</li>
+          <li>No usa tus datos para publicidad ni para evaluar tu solvencia.</li>
+          <li>No incluye analíticas, rastreadores ni código remoto.</li>
+          <li>No lee nada fuera de <code>youtube.com</code>.</li>
+        </ul>
+        <p>El uso de la información recibida de las API de Google cumple la <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener">política de datos de usuario de la Chrome Web Store</a>, incluidos los requisitos de uso limitado (Limited Use).</p>
+
+        <h2>Tus opciones</h2>
+        <ul>
+          <li><strong>Exportar:</strong> en Opciones puedes descargar una copia de tus grupos en un archivo JSON.</li>
+          <li><strong>Borrar:</strong> borra tus grupos desde la barra lateral o el popup. Para quitar la licencia de este navegador, usa Opciones → SortTube Pro.</li>
+          <li><strong>Borrar todo:</strong> al desinstalar SortTube, Chrome borra todos los datos que guardaba en este navegador. Los datos sincronizados se borran de tu cuenta de Google cuando desinstalas la extensión en todos tus navegadores, o desde la configuración de sincronización de Chrome.</li>
+          <li>Para tus datos de compra, puedes dirigirte a Lemon Squeezy o escribirme y te ayudo.</li>
+        </ul>
+        <p>Si vives en la Unión Europea, tienes derecho a acceder a tus datos, rectificarlos o suprimirlos y a presentar una reclamación ante la autoridad de protección de datos (en España, la <a href="https://www.aepd.es" rel="noopener">AEPD</a>).</p>
+
+        <h2>Menores</h2>
+        <p>SortTube no está dirigida a menores de 14 años y no recoge a sabiendas datos de menores.</p>
+
+        <h2>Cambios en esta política</h2>
+        <p>Si esta política cambia, se actualizará la fecha de arriba. Si el cambio afecta a qué datos se tratan, se explicará en las notas de la nueva versión de la extensión.</p>
+      </article>
+
+      <!-- ===================================================== English -->
+      <article id="en" lang="en" hidden>
+        <h1>SortTube Privacy Policy</h1>
+        <p class="muted">Last updated: November 12, 2026</p>
+
+        <div class="summary">
+          <p><strong>In short</strong></p>
+          <ul>
+            <li>SortTube has no servers of its own. It does not collect, sell or share your data.</li>
+            <li>No ads, no analytics, no tracking.</li>
+            <li>Your groups are kept in your browser and, with Chrome sync, in your Google account.</li>
+            <li>It only connects to YouTube and, if you buy SortTube Pro, to Lemon Squeezy to check your license.</li>
+          </ul>
+        </div>
+
+        <h2>Who is responsible</h2>
+        <p>SortTube is a Chrome extension developed by Juan Manuel Vallecillos. For any privacy question, write to <a href="mailto:[CORREO DE CONTACTO]">[CORREO DE CONTACTO]</a>.</p>
+        <p>SortTube is not affiliated with YouTube or Google.</p>
+
+        <h2>What SortTube stores</h2>
+        <p>Everything is kept in Chrome's extension storage. Nothing reaches the developer's servers, because there are none.</p>
+        <table>
+          <tr><th>Data</th><th>Where</th><th>Why</th></tr>
+          <tr><td>Your groups: name, colour, emoji and their channels (ID, name and @handle)</td><td><code>chrome.storage.sync</code></td><td>To show your groups. If Chrome sync is on, Google syncs them across your browsers, under its own policy.</td></tr>
+          <tr><td>When you last opened each group</td><td><code>chrome.storage.sync</code></td><td>To mark the videos that are new since your last visit.</td></tr>
+          <tr><td>SortTube Pro license (if you buy it): key, ID of this activation, status, product name, purchase email and time of the last check</td><td><code>chrome.storage.sync</code></td><td>To know whether you have Pro, in your other browsers too.</td></tr>
+          <tr><td>Channel profile pictures, latest upload times, chosen layout and filters, groups expanded in the sidebar</td><td><code>chrome.storage.local</code> (this browser only)</td><td>Cache and preferences, so everything loads faster and the way you left it.</td></tr>
+        </table>
+        <p>SortTube <strong>does not store</strong> your watch history, what you watch or what you search for.</p>
+
+        <h2>Who SortTube talks to</h2>
+        <p><strong>YouTube</strong> (<code>www.youtube.com</code> and its image servers), straight from your browser:</p>
+        <ul>
+          <li><strong>Without your session:</strong> the videos of the channels in your groups (RSS feeds and public channel pages), their lengths and profile pictures.</li>
+          <li><strong>With your session, to read:</strong>
+            <ul>
+              <li>your subscriptions, so you can sort them;</li>
+              <li>your Watch later list, to show which videos you have saved;</li>
+              <li>the first page of your history and of your Subscriptions feed, only to know how much of each video you have watched and draw the red progress bar. This is used in memory while the page is open: it is never stored or sent anywhere.</li>
+            </ul>
+          </li>
+          <li><strong>With your session, to change something,</strong> only when you click the matching button:
+            <ul>
+              <li>subscribing to or unsubscribing from a channel, from the organizer and after you confirm;</li>
+              <li>adding a video to or removing it from Watch later;</li>
+              <li>adding a video to the queue.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>These are the same requests YouTube's own page makes, and they are covered by <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. SortTube never sees or stores your password.</p>
+        <p>The video preview uses the YouTube page's own player. When you use it, YouTube may record the playback as it does with its own previews. If you change the volume in the preview, SortTube updates YouTube's volume setting in your browser, just as its player would.</p>
+
+        <p><strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), only if you buy SortTube Pro:</p>
+        <ul>
+          <li>You buy on Lemon Squeezy's page, which acts as the merchant of record. They handle your payment and billing details under their <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">privacy policy</a>. SortTube never sees or stores your card details.</li>
+          <li>When you activate your license, and then once a day, SortTube sends Lemon Squeezy your license key and the ID of this activation to check that it is still valid. Lemon Squeezy answers with the license status, the product name and the purchase email, stored as described above.</li>
+        </ul>
+
+        <h2>What SortTube does not do</h2>
+        <ul>
+          <li>It does not sell or transfer your data to third parties.</li>
+          <li>It does not use your data for advertising or creditworthiness.</li>
+          <li>It includes no analytics, trackers or remote code.</li>
+          <li>It reads nothing outside <code>youtube.com</code>.</li>
+        </ul>
+        <p>The use of information received from Google APIs adheres to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li><strong>Export:</strong> in Options you can download a copy of your groups as a JSON file.</li>
+          <li><strong>Delete:</strong> delete your groups from the sidebar or the popup. To remove the license from this browser, use Options → SortTube Pro.</li>
+          <li><strong>Delete everything:</strong> when you uninstall SortTube, Chrome deletes everything it stored in that browser. Synced data is removed from your Google account when you uninstall the extension in all your browsers, or from Chrome's sync settings.</li>
+          <li>For your purchase data, contact Lemon Squeezy, or write to me and I'll help.</li>
+        </ul>
+        <p>If you live in the European Union, you have the right to access, correct or delete your data and to lodge a complaint with your data protection authority.</p>
+
+        <h2>Children</h2>
+        <p>SortTube is not directed at children under 14 and does not knowingly collect their data.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the date above will be updated. If the change affects which data is handled, it will be explained in the release notes of the new version.</p>
+      </article>
+    </main>
+
+    <script src="privacy.js"></script>
+  </body>
+</html>
