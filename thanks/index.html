@@ -22,6 +22,7 @@
         border-radius: 50%; display: grid; place-items: center; font-weight: 700; background: var(--accent); color: var(--accent-fg); }
       .steps strong { display: block; margin-bottom: 2px; }
       .steps p { margin: 0; color: var(--muted); }
+      .steps .btn { margin-top: 12px; padding: 10px 20px; }
       .ui { display: inline-block; padding: 0 7px; border-radius: 6px; background: var(--panel-2); color: var(--fg);
         font-size: 0.92em; white-space: nowrap; }
       .thanks .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 36px; }
@@ -40,36 +41,38 @@
     <main class="thanks">
       <article lang="en">
         <div class="done"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></div>
-        <h1>Thank you for getting SortTube Pro!</h1>
-        <p class="lead">Your purchase is complete. Turning Pro on takes less than a minute.</p>
-        <h2>Activate Pro in 3 steps</h2>
+        <h1>Thank you for buying SortTube Pro!</h1>
+        <p class="lead">Your payment is done. Now turn Pro on in your browser: it takes a couple of minutes.</p>
+        <h2>Activate Pro in 4 steps</h2>
         <ol class="steps">
-          <li><strong>Copy your license key</strong><p>It was shown when the payment finished, and Polar, our payment provider, has also emailed it to you.</p></li>
+          <li><strong>Open your customer portal</strong><p>Polar, our payment provider, keeps your license there. Enter the email you paid with, and type in the code Polar sends to it.</p><a class="btn primary" href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">Open my customer portal <span aria-hidden="true">→</span></a></li>
+          <li><strong>Copy your license key</strong><p>In the portal, open your SortTube Pro purchase: the license key is among its benefits. Copy it.</p></li>
           <li><strong>Open SortTube</strong><p>Click the SortTube icon in Chrome's toolbar (if you don't see it, it's in the puzzle-piece menu), go to the <span class="ui">Pro</span> tab and click <span class="ui">Enter my license key</span>.</p></li>
           <li><strong>Paste it and click Activate</strong><p>Pro turns on straight away. With Chrome sync on, it follows you to your other computers too.</p></li>
         </ol>
         <div class="actions"><a class="btn ghost" href="../">Back to the website</a></div>
         <div class="help">
-          <div><h3>Can't find your key?</h3><p>Look for an email from Polar, also in your spam folder. You can also see it any time in <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">your customer portal</a>, signing in with the email you bought it with.</p></div>
-          <div><h3>Invoices, card or cancelling</h3><p>It's all in <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">your customer portal</a>. If you cancel, Pro stays on until the end of the period you paid for.</p></div>
-          <div><h3>Something not working?</h3><p>Write to <a href="mailto:support@sorttube.app">support@sorttube.app</a> from the email you bought it with, and I'll sort it out.</p></div>
+          <div><h3>The sign-in code doesn't arrive?</h3><p>Check your spam folder for an email from Polar, and make sure you typed the same email you paid with.</p></div>
+          <div><h3>Your receipt</h3><p>It's in <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">the same customer portal</a>, whenever you need it. Pro is a one-time payment: nothing renews.</p></div>
+          <div><h3>Something not working?</h3><p>Write to <a href="mailto:support@sorttube.app">support@sorttube.app</a> from the email you paid with, and I'll sort it out.</p></div>
         </div>
       </article>
       <article lang="es" hidden>
         <div class="done"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></div>
-        <h1>¡Gracias por conseguir SortTube Pro!</h1>
-        <p class="lead">Tu compra se ha completado. Activar Pro te llevará menos de un minuto.</p>
-        <h2>Activa Pro en 3 pasos</h2>
+        <h1>¡Gracias por comprar SortTube Pro!</h1>
+        <p class="lead">El pago se ha completado. Ahora activa Pro en tu navegador: te llevará un par de minutos.</p>
+        <h2>Activa Pro en 4 pasos</h2>
         <ol class="steps">
-          <li><strong>Copia tu clave de licencia</strong><p>Se mostró al terminar el pago, y Polar, nuestro proveedor de pagos, también te la ha enviado por correo.</p></li>
+          <li><strong>Entra en tu portal de cliente</strong><p>Polar, nuestro proveedor de pagos, guarda ahí tu licencia. Escribe el correo con el que pagaste e introduce el código que Polar te enviará.</p><a class="btn primary" href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">Abrir mi portal de cliente <span aria-hidden="true">→</span></a></li>
+          <li><strong>Copia tu clave de licencia</strong><p>En el portal, abre tu compra de SortTube Pro: la clave de licencia está entre sus ventajas. Cópiala.</p></li>
           <li><strong>Abre SortTube</strong><p>Haz clic en el icono de SortTube en la barra de Chrome (si no lo ves, está en el menú de la pieza de puzle), ve a la pestaña <span class="ui">Pro</span> y pulsa <span class="ui">Introducir mi clave de licencia</span>.</p></li>
           <li><strong>Pégala y pulsa Activar</strong><p>Pro se activa al momento. Con la sincronización de Chrome, también te sigue a tus otros ordenadores.</p></li>
         </ol>
         <div class="actions"><a class="btn ghost" href="../es/">Volver a la web</a></div>
         <div class="help">
-          <div><h3>¿No encuentras tu clave?</h3><p>Busca un correo de Polar, también en la carpeta de spam. También puedes verla cuando quieras en <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">tu portal de cliente</a>, entrando con el correo con el que compraste.</p></div>
-          <div><h3>Facturas, tarjeta o cancelar</h3><p>Está todo en <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">tu portal de cliente</a>. Si cancelas, Pro sigue activo hasta el final del periodo que pagaste.</p></div>
-          <div><h3>¿Algo no funciona?</h3><p>Escríbeme a <a href="mailto:support@sorttube.app">support@sorttube.app</a> desde el correo con el que compraste y lo resolvemos.</p></div>
+          <div><h3>¿No te llega el código para entrar?</h3><p>Busca un correo de Polar en la carpeta de spam, y comprueba que has escrito el mismo correo con el que pagaste.</p></div>
+          <div><h3>Tu factura</h3><p>La tienes en <a href="https://polar.sh/sort-tube/portal" target="_blank" rel="noopener">el mismo portal de cliente</a>, cuando la necesites. Pro es un pago único: no se renueva nada.</p></div>
+          <div><h3>¿Algo no funciona?</h3><p>Escríbeme a <a href="mailto:support@sorttube.app">support@sorttube.app</a> desde el correo con el que pagaste y lo resolvemos.</p></div>
         </div>
       </article>
     </main>
