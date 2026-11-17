@@ -75,7 +75,7 @@
             <li>SortTube no tiene servidores propios. No recoge, no vende y no comparte tus datos.</li>
             <li>Sin publicidad, sin analíticas y sin rastreo.</li>
             <li>Tus grupos se guardan en tu navegador y, con la sincronización de Chrome, en tu cuenta de Google.</li>
-            <li>Solo se conecta con YouTube y, si compras SortTube Pro, con Lemon Squeezy para comprobar tu licencia.</li>
+            <li>Solo se conecta con YouTube y, si compras SortTube Pro, con Polar para comprobar tu licencia.</li>
           </ul>
         </div>
 
@@ -90,7 +90,7 @@
           <tr><td>Tus grupos: nombre, color, emoji y los canales de cada uno (identificador, nombre y @handle)</td><td><code>chrome.storage.sync</code></td><td>Mostrar tus grupos. Si tienes activada la sincronización de Chrome, Google los sincroniza entre tus navegadores, según su propia política.</td></tr>
           <tr><td>Cuándo abriste cada grupo por última vez</td><td><code>chrome.storage.sync</code></td><td>Marcar los vídeos nuevos desde tu última visita.</td></tr>
           <tr><td>Tus ajustes: idioma de SortTube, qué muestra la barra lateral y desde qué porcentaje un vídeo cuenta como visto</td><td><code>chrome.storage.sync</code></td><td>Que SortTube funcione como lo configuraste, también en tus otros navegadores.</td></tr>
-          <tr><td>Licencia de SortTube Pro (si la compras): clave, identificador de esta activación, estado, nombre del producto, correo de la compra y fecha de la última comprobación</td><td><code>chrome.storage.sync</code></td><td>Saber si tienes Pro, también en tus otros navegadores.</td></tr>
+          <tr><td>Licencia de SortTube Pro (si la compras): clave, identificador de esta activación, estado y fecha de la última comprobación</td><td><code>chrome.storage.sync</code></td><td>Saber si tienes Pro, también en tus otros navegadores.</td></tr>
           <tr><td>Fotos de perfil de los canales, fechas de las últimas subidas, vista y filtros elegidos, grupos desplegados o plegados en la barra lateral, por dónde vas en la guía de primeros pasos</td><td><code>chrome.storage.local</code> (solo en este navegador)</td><td>Caché y preferencias, para que todo cargue más rápido y como lo dejaste.</td></tr>
           <tr><td>Los textos de la interfaz en el idioma que elegiste en SortTube</td><td><code>localStorage</code> de las páginas donde funciona SortTube (solo en este navegador)</td><td>Mostrarte SortTube en ese idioma desde el primer momento. Son solo las traducciones de la extensión, sin ningún dato tuyo.</td></tr>
         </table>
@@ -119,10 +119,10 @@
         <p>Estas peticiones son las mismas que haría la propia página de YouTube, y se rigen por la <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad de Google</a>. SortTube nunca ve ni guarda tu contraseña.</p>
         <p>La vista previa de vídeo usa el reproductor de la propia página de YouTube. Al usarla, YouTube puede registrar la reproducción como lo hace con sus propias vistas previas. Si cambias el volumen en la vista previa, SortTube actualiza la preferencia de volumen de YouTube en tu navegador, igual que haría su reproductor.</p>
 
-        <p><strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), solo si compras SortTube Pro:</p>
+        <p><strong>Polar</strong> (<code>api.polar.sh</code>), solo si compras SortTube Pro:</p>
         <ul>
-          <li>La compra se hace en la página de Lemon Squeezy, que actúa como vendedor oficial (merchant of record). Ellos tratan tus datos de pago y de facturación según su <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">política de privacidad</a>. SortTube no ve ni guarda los datos de tu tarjeta.</li>
-          <li>Al activar tu licencia y después una vez al día, SortTube envía a Lemon Squeezy tu clave de licencia y el identificador de esta activación para comprobar que sigue siendo válida. Lemon Squeezy responde con el estado de la licencia, el nombre del producto y el correo de la compra, que se guardan como se indica arriba.</li>
+          <li>La compra se hace en la página de Polar, que actúa como vendedor oficial (merchant of record). Ellos tratan tus datos de pago y de facturación según su <a href="https://polar.sh/legal/privacy-policy" rel="noopener">política de privacidad</a>. SortTube no ve ni guarda los datos de tu tarjeta.</li>
+          <li>Al activar tu licencia y después una vez al día, SortTube envía a Polar tu clave de licencia y el identificador de esta activación para comprobar que sigue siendo válida. Polar responde con el estado de la licencia, que se guarda como se indica arriba.</li>
         </ul>
 
         <h2>Lo que SortTube no hace</h2>
@@ -139,7 +139,7 @@
           <li><strong>Exportar:</strong> en el popup de SortTube (pestaña Copias) o en Opciones puedes descargar una copia de tus grupos en un archivo JSON.</li>
           <li><strong>Borrar:</strong> borra tus grupos desde la barra lateral o desde el organizador. Para quitar la licencia de este navegador, usa Opciones → SortTube Pro.</li>
           <li><strong>Borrar todo:</strong> al desinstalar SortTube, Chrome borra todos los datos que guardaba en este navegador. Los datos sincronizados se borran de tu cuenta de Google cuando desinstalas la extensión en todos tus navegadores, o desde la configuración de sincronización de Chrome.</li>
-          <li>Para tus datos de compra, puedes dirigirte a Lemon Squeezy o escribirme y te ayudo.</li>
+          <li>Para tus datos de compra, puedes dirigirte a Polar o escribirme y te ayudo.</li>
         </ul>
         <p>Si vives en la Unión Europea, tienes derecho a acceder a tus datos, rectificarlos o suprimirlos y a presentar una reclamación ante la autoridad de protección de datos (en España, la <a href="https://www.aepd.es" rel="noopener">AEPD</a>).</p>
 
@@ -161,7 +161,7 @@
             <li>SortTube has no servers of its own. It does not collect, sell or share your data.</li>
             <li>No ads, no analytics, no tracking.</li>
             <li>Your groups are kept in your browser and, with Chrome sync, in your Google account.</li>
-            <li>It only connects to YouTube and, if you buy SortTube Pro, to Lemon Squeezy to check your license.</li>
+            <li>It only connects to YouTube and, if you buy SortTube Pro, to Polar to check your license.</li>
           </ul>
         </div>
 
@@ -176,7 +176,7 @@
           <tr><td>Your groups: name, colour, emoji and their channels (ID, name and @handle)</td><td><code>chrome.storage.sync</code></td><td>To show your groups. If Chrome sync is on, Google syncs them across your browsers, under its own policy.</td></tr>
           <tr><td>When you last opened each group</td><td><code>chrome.storage.sync</code></td><td>To mark the videos that are new since your last visit.</td></tr>
           <tr><td>Your settings: SortTube's language, what the sidebar shows and from what percentage a video counts as watched</td><td><code>chrome.storage.sync</code></td><td>So SortTube works the way you set it up, in your other browsers too.</td></tr>
-          <tr><td>SortTube Pro license (if you buy it): key, ID of this activation, status, product name, purchase email and time of the last check</td><td><code>chrome.storage.sync</code></td><td>To know whether you have Pro, in your other browsers too.</td></tr>
+          <tr><td>SortTube Pro license (if you buy it): key, ID of this activation, status and time of the last check</td><td><code>chrome.storage.sync</code></td><td>To know whether you have Pro, in your other browsers too.</td></tr>
           <tr><td>Channel profile pictures, latest upload times, chosen layout and filters, groups expanded or folded in the sidebar, how far you are in the getting-started guide</td><td><code>chrome.storage.local</code> (this browser only)</td><td>Cache and preferences, so everything loads faster and the way you left it.</td></tr>
           <tr><td>The interface texts in the language you chose in SortTube</td><td><code>localStorage</code> of the pages where SortTube runs (this browser only)</td><td>To show SortTube in that language right away. They are only the extension's translations, with no data about you.</td></tr>
         </table>
@@ -205,10 +205,10 @@
         <p>These are the same requests YouTube's own page makes, and they are covered by <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. SortTube never sees or stores your password.</p>
         <p>The video preview uses the YouTube page's own player. When you use it, YouTube may record the playback as it does with its own previews. If you change the volume in the preview, SortTube updates YouTube's volume setting in your browser, just as its player would.</p>
 
-        <p><strong>Lemon Squeezy</strong> (<code>api.lemonsqueezy.com</code>), only if you buy SortTube Pro:</p>
+        <p><strong>Polar</strong> (<code>api.polar.sh</code>), only if you buy SortTube Pro:</p>
         <ul>
-          <li>You buy on Lemon Squeezy's page, which acts as the merchant of record. They handle your payment and billing details under their <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">privacy policy</a>. SortTube never sees or stores your card details.</li>
-          <li>When you activate your license, and then once a day, SortTube sends Lemon Squeezy your license key and the ID of this activation to check that it is still valid. Lemon Squeezy answers with the license status, the product name and the purchase email, stored as described above.</li>
+          <li>You buy on Polar's page, which acts as the merchant of record. They handle your payment and billing details under their <a href="https://polar.sh/legal/privacy-policy" rel="noopener">privacy policy</a>. SortTube never sees or stores your card details.</li>
+          <li>When you activate your license, and then once a day, SortTube sends Polar your license key and the ID of this activation to check that it is still valid. Polar answers with the license status, which is stored as described above.</li>
         </ul>
 
         <h2>What SortTube does not do</h2>
@@ -225,7 +225,7 @@
           <li><strong>Export:</strong> in SortTube's popup (Backup tab) or in Options you can download a copy of your groups as a JSON file.</li>
           <li><strong>Delete:</strong> delete your groups from the sidebar or from the organizer. To remove the license from this browser, use Options → SortTube Pro.</li>
           <li><strong>Delete everything:</strong> when you uninstall SortTube, Chrome deletes everything it stored in that browser. Synced data is removed from your Google account when you uninstall the extension in all your browsers, or from Chrome's sync settings.</li>
-          <li>For your purchase data, contact Lemon Squeezy, or write to me and I'll help.</li>
+          <li>For your purchase data, contact Polar, or write to me and I'll help.</li>
         </ul>
         <p>If you live in the European Union, you have the right to access, correct or delete your data and to lodge a complaint with your data protection authority.</p>
 
